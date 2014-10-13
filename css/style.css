@@ -50,6 +50,7 @@
     color: #000000;
     text-align: center;
     margin:0 0 60px 0;
+    font-family: "source_sans_prolight";
 }
 .readMore{
     padding: 10px 30px;
@@ -63,7 +64,7 @@
     color: #ffffff;
 }
 .contentSection{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 ul{
     margin: 0;
@@ -73,7 +74,7 @@ ul{
 /*end global style*/
 body{
   font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "source_sans_prolight";
 }
 header{
     background: #ffffff;
@@ -108,6 +109,9 @@ header{
   -webkit-transition:All 1s ease;
   transition:All 1s ease
 }
+.navbar .nav > li > .active{
+  color: #000;
+}
 .mainNav .active, .mainNav li a:hover{
   color: #000;
   text-decoration: none;
@@ -115,7 +119,9 @@ header{
   transition: width All 1.5s ease;
 }
 .navbar .nav > li > a{
-    padding: 0
+    padding: 0;
+    font-family: "source_sans_probold";
+    text-transform: uppercase;
 }
 .navbar .nav{
     margin-right: 0
@@ -133,6 +139,7 @@ header{
 .voteInfo a{
     color: #dc000d;
     font-size: 13px;
+    font-family: "source_sans_proregular";
 }
 .voteInfo h5{
   margin: 0;
@@ -142,6 +149,7 @@ header{
 }
 .voteInfo .voteDate{
     font-weight: bold;
+    font-family: "source_sans_probold";
 }
 .voteDate{
   font-weight: bold;
@@ -219,10 +227,17 @@ header{
     padding-top: 100px;
 }
 
-.slideContent,
-.slideContent img{
+.slideContent{
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+.slideContent img {
     width: 100%;
     height: 100%;
+}
+.slider{
+  background: #000;
 }
 .homeSlider .cycle-pager{
     position:absolute;
@@ -236,7 +251,7 @@ header{
     border-radius: 50%;
     height: 10px;
     width: 10px;
-    text-indent: -999px;
+    text-indent: -999em;
     display: block;
     float: left;
     margin-right: 7px;
@@ -263,8 +278,9 @@ header{
 .sliderText h1{
     font-size: 48px;
     color: #ffffff;
-    font-weight: 600;
     margin-bottom: 30px;
+    font-family: "source_sans_prolight";
+    font-weight: normal;
 }
 .sliderText .slideSubTxt{
     font-size: 18px;
@@ -273,17 +289,22 @@ header{
     margin: 0 auto 30px;
     font-family: Minion Pro, sans-serif;
 }
-
+.profile,
+.recentNews,
+.issues,
+.gallery,
+.contact{
+  width: 620px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
 /*profile details start*/
 .profilePic {
-    background: #fff;
-    border-radius: 50%;
-    height: 125px;
     width: 140px;
     margin: 0 auto;
 }
 .profilePic img{
-    border-radius: 50%;
     padding-top: 15px;
 }
 .profileDetails{
@@ -291,16 +312,17 @@ header{
 }
 .nameDesignation h1, .nameDesignation h5{
     font-size: 48px;
-    font-weight: 300;
+    font-weight: normal;
     color: #ffffff;
     line-height: 50px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "source_sans_prolight";
+    font-weight: normal;
 }
 .nameDesignation h5{
     font-size: 24px;
     line-height: 26px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "source_sans_prolight";
 }
 .nameDesignation{
     margin-bottom: 30px;
@@ -319,7 +341,7 @@ header{
 }
 .btnCenter .readMore{
     margin:  auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "source_sans_prolight";
 }
 /*profile details end*/
 
@@ -348,6 +370,7 @@ header{
     border-bottom: solid 1px #e5e5e5;
     margin-bottom: 30px;
     overflow: hidden;
+    text-align: left;
 }
 .newsImg{
     text-align: right;
@@ -394,7 +417,7 @@ header{
     margin-bottom: 120px;
 }
 .contact h4{
-    font-family: 'Open Sans', sans-serif;
+    font-family: "source_sans_prolight";
     font-weight: 300;
     font-size: 24px;
     color: #ffffff;
@@ -440,3 +463,8 @@ header{
 }
 /*contact section end*/
 
+/*new added*/
+.readMore:hover{
+  background: #fff;
+  color: #000;
+}

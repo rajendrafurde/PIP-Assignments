@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-    $(".cycle-slideshow img").fullScreenImage({
-        imageHeight: 		650,
-        imageWidth: 		1180,
-        verticalPosition:   'center',
-        horizontalPosition:   'right'
-    });
+    // $(".cycle-slideshow img").fullScreenImage({
+    //     imageHeight: 		650,
+    //     imageWidth: 		1180,
+    //     verticalPosition:   'center',
+    //     horizontalPosition:   'right'
+    // });
 
     /*gallery listing*/
     $('.gallery ul li:nth-child(3n+1)').addClass("abc");
@@ -29,6 +29,17 @@ $(".scrollThis").each(function() {
             e.preventDefault();
         });
     });
+
+// giving height to the section if height is less than window height
+    /*var sectionHeight = $( "#containerWrap > section" ).length;
+    $( "#containerWrap > section" ).each(function( index ) {
+        var $this = $(this);
+        if ( $this.outerHeight() < windowHeight ) {
+            $this.css("height",windowHeight);
+        };
+    });*/
+
+
 });
 
 $(window).trigger('resize');
