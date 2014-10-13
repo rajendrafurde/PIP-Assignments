@@ -229,7 +229,7 @@ header{
 
 .slideContent{
     width: 100%;
-    height: auto;
+    height: 600px;
     background: #000;
 }
 .slideContent img {
@@ -467,4 +467,13 @@ header{
 .readMore:hover{
   background: #fff;
   color: #000;
+}
+
+
+
+/*custom responsive*/
+@media (min-width: 768px) and (max-width: 979px) {
+  .navbar{
+    float: right;
+  }
 }
